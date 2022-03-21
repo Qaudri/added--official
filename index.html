@@ -7,11 +7,100 @@
     <title>Added Digital Solutions</title>
     <link rel="stylesheet" href="./assets/css/tailwind.css">
 </head>
-<body class="bg-primary-100 h-screen">
-    <section>
-        <div>
-            This is a text
+<body>
+  <header class="shadow-lg bg-white fixed w-full">
+
+    <div class="container mx-auto py-4 md:py-2 px-8 md:px-0">
+        <div class="block md:flex items-center justify-between">
+
+            <div class="flex justify-between">
+                <div class="">
+                    <a href="./index.html">
+                        <img src="./Assets/images/main-logo.svg" alt="" width="75px" />
+                    </a>
+                </div>
+    
+                <div class="flex md:hidden">
+                    <img src="./assets/images/menu.svg" alt="" width="30px" class="block md:hidden" id="menuBtn" />
+                    <img src="./assets/images/close.svg" alt="" width="30px" class="hidden" id="closeBtn" />
+                </div>
+            </div>
+
+            <div class="items-center justify-between hidden md:flex" id="menu">
+                <a href="./who-we-are.html" 
+                    class="text-black font-medium md:mx-4 hover:border-cyan-400 hover:text-cyan-400 block my-4 mx-8 md:my-0">
+                    Who We Are
+                </a>
+
+                <a href="#"
+                    class="text-black font-medium md:mx-4 hover:text-cyan-400 block my-4 mx-8 md:my-0">
+                    What We Do
+                </a>
+
+                <a href="#">
+                    <span class="flex">
+                        <p class="text-black font-medium md:ml-4 mr-2 hover:text-cyan-400 block ml-8 my-0 md:my-0"> Our Services </p>
+                        <img src="./Assets/images/expand_arrow.svg" alt="" width="20px" class="md:mr-4 my-0 md:my-0 block" id="servicesDown"/>
+                        <img src="./assets/images/arrow-up.svg" alt="" width="20px" class="md:mr-4 my-0 md:my-0 hidden" id="servicesUp"/>
+                    </span>
+                </a>
+
+                <div class="bg-white hidden mt-4 mx-8 md:m-0 md:w-auto md:absolute md:top-12 transform md:translate-x-2/3 md:p-2 grid-cols-2 md:shadow-xl" id="servicesList">
+                    <a href="#"
+                        class="text-black font-medium md:mx-3 hover:text-cyan-400 block my-1 mx-6">
+                        Graphics Design
+                    </a>
+                    <a href="#"
+                        class="text-black font-medium md:mx-3 hover:text-cyan-400 block my-1 mx-6">
+                        Web Design
+                    </a>
+                    <a href="#"
+                        class="text-black font-medium md:mx-3 hover:text-cyan-400 block my-1 mx-6">
+                        Video Editing
+                    </a>
+                    <a href="#"
+                        class="text-black font-medium md:mx-3 hover:text-cyan-400 block my-1 mx-6">
+                        Freelancing
+                    </a>
+                    <a href="#"
+                        class="text-black font-medium md:mx-3 hover:text-cyan-400 block my-1 mx-6">
+                        Printing
+                    </a>
+                    <a href="#"
+                        class="text-black font-medium md:mx-3 hover:text-cyan-400 block my-1 mx-6">
+                        Amazon KDP
+                    </a>
+                    <a href="#"
+                        class="text-black font-medium md:mx-3 hover:text-cyan-400 block my-1 mx-6">
+                        E-Commerce
+                    </a>
+                    <a href="#"
+                        class="text-black font-medium md:mx-3 hover:text-cyan-400 block my-1 mx-6">
+                        Training</a>
+                </div>
+                
+                <a href="#"
+                    class="text-black font-medium md:mx-4 hover:text-cyan-400 ease-in-out md:my-0 block my-4 mx-8">
+                    Academy
+                </a>
+
+
+
+            </div>
+
+            <div class="hidden md:flex justify-end my-8 md:my-0" id="menuCTA">
+                <a href="#" class="text-black px-4 py-2 my-4 md:my-0 mx-8 font-medium border-2 border-cyan-400 hover:bg-cyan-400 hover:text-white duration-150">
+                    Let's Talk
+                </a>
+            </div>
+
         </div>
-    </section>
+
+
+    </div>
+
+  </header>
+
+
 </body>
 </html>
