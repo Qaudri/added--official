@@ -11,9 +11,9 @@ function toggleMenuState() {
 
   if (this.menuState = true) {
     menuItems.style.display = "block";
-    console.log("true");
+    menuCTA.style.display = "block"
   } else {
     menuItems.style.display = "none";
-    console.log(false);
+    menuCTA.style.display = "none"
   }
 }
