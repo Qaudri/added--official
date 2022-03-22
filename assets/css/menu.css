@@ -22,7 +22,7 @@
 .hamburger > div{
   position: relative;
   width: 100%;
-  height: 3px;
+  height: 2.5px;
   background-color: #058182;
   display: flex;
   align-items: center;
@@ -34,7 +34,7 @@
   content: '';
   width: 100%;
   height: 3px;
-  top: -12.5px;
+  top: -12px;
   background-color: #058182;
   position: absolute;
   cursor: pointer;
@@ -44,7 +44,7 @@
 }
 
 .hamburger > div:after{
-  top: 12.5px;
+  top: 12px;
   transform-origin: left bottom;
   transform: rotateZ(0deg);
 }
@@ -57,23 +57,23 @@
 
 .menu-wrap .toggle:checked + .hamburger > div:before,
 .menu-wrap .toggle:checked + .hamburger > div:after{
-  transform: rotate(41deg);
+  transform: rotate(40deg);
   background-color: #f26522;
 }  
 
 .menu-wrap .toggle:checked + .hamburger > div:after{
-  transform: rotate(-41deg);
+  transform: rotate(-40deg);
   background-color: #f26522;
 }  
 
 @media screen and (max-width: 640px) {
-  /* .slide-in{
+  .slide-in{
     animation: slideIn .5s forwards;
   }
 
   .slide-out{
     animation: slideOut .5s forwards;
-  } */
+  }
 
   @keyframes slideIn {
     from{

@@ -4,9 +4,9 @@ let menuCTA = document.getElementById("menu_cta");
 let menuState = false
 
 
-toggleMenu.addEventListener("click", toggleMenuState);
+toggleMenu.addEventListener("click", toggleState);
 
-function toggleMenuState() {
+function toggleState() {
   this.menuState =! this.menuState;
 
   if (this.menuState = true) {
