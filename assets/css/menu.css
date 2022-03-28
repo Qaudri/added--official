@@ -72,7 +72,7 @@
   }
 
   .slide-out{
-    animation: slideOut .5s forwards;
+    animation: slideOut 1s forwards;
   }
 
   @keyframes slideIn {
