@@ -68,7 +68,7 @@
 
 @media screen and (max-width: 1024px) {
   .slide-in{
-    animation: slideIn .5s forwards;
+    animation: slideIn 1s forwards;
   }
 
   .slide-out{
