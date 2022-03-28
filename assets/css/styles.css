@@ -8,18 +8,23 @@ body{
   background-repeat: no-repeat;
 }
 
-.home-slider{
-  background: #222222;
-  min-height: 200px;
-  /* width: 100%; */
+.tojum-home-slider {
+  background: #444;
+  min-height: 600px;
+  max-width: 100%;
   margin: 0 auto;
-  /* position: relative; */
-  /* overflow: hidden; */
+  position: relative;
+  overflow: hidden;
   transform: translateZ(0);
 }
 
-.home-slider > div{
-  height: 200px;
+.tojum-home-slider .mover-1 {
+  -webkit-animation: moveImage 45s linear infinite;
+  animation: moveImage 45s linear infinite;
+}
+
+.tojum-home-slider>div {
+  height: 600px;
   width: 100%;
   position: absolute;
   top: 0;
@@ -28,17 +33,9 @@ body{
   transform: translateZ(0);
 }
 
-.home-slider .mover-1{
-  -webkit-animation: moveImage 45s linear infinite;
-  animation: moveImage 45s linear infinite;
-}
 
-.bg-cover{
-  background-size: cover;
-}
-
-@keyframes moveImage {
-  100%{
-    transform: translateX(-100%);
+@keyframes moveImage{
+  100% {
+    transform: translateX(-50%);
   }
 }
