@@ -8,9 +8,9 @@ body{
   background-repeat: no-repeat;
 }
 
-.tojum-home-slider {
+.added-home-slider {
   background: #444;
-  min-height: 400px;
+  min-height: 300px;
   max-width: 100%;
   margin: 0 auto;
   position: relative;
@@ -18,13 +18,13 @@ body{
   transform: translateZ(0);
 }
 
-.tojum-home-slider .mover-1 {
+.added-home-slider .mover-1 {
   -webkit-animation: moveImage 45s linear infinite;
   animation: moveImage 45s linear infinite;
 }
 
-.tojum-home-slider>div {
-  height: 400px;
+.added-home-slider>div {
+  height: 300px;
   width: 100%;
   position: absolute;
   top: 0;
