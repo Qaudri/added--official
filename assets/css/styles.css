@@ -10,11 +10,11 @@ body{
 
 .tojum-home-slider {
   background: #444;
-  min-height: 600px;
+  min-height: 400px;
   max-width: 100%;
   margin: 0 auto;
   position: relative;
-  /* overflow: hidden; */
+  overflow: hidden;
   transform: translateZ(0);
 }
 
@@ -24,7 +24,7 @@ body{
 }
 
 .tojum-home-slider>div {
-  height: 600px;
+  height: 400px;
   width: 100%;
   position: absolute;
   top: 0;
@@ -38,4 +38,10 @@ body{
   100% {
     transform: translateX(-50%);
   }
+}
+
+br{
+  content: "A" !important;
+  display: block !important;
+  margin-bottom: .65em !important;
 }
