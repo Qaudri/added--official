@@ -45,3 +45,8 @@ br{
   display: block !important;
   margin-bottom: .65em !important;
 }
+
+div{
+  text-align: justify;
+  text-justify: inter-word;
+}
