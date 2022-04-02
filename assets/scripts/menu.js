@@ -1,19 +1,23 @@
-let toggleMenu = document.getElementById("menu_button")
+let menuBtn = document.getElementById("menu_button")
+let closeBtn = document.getElementById("close_button")
 let menuItems = document.getElementById("menu_items")
 let menuCTA = document.getElementById("menu_cta");
 
-let menuState = false
 
-toggleMenu.addEventListener("click", toggleState);
+menuBtn.addEventListener("click", openMenu);
+closeBtn.addEventListener("click", closeMenu);
 
-function toggleState(params) {
-  this.menuState != this.menuState;
 
-  if (this.menuState = false) {
-    menuItems.style.display = "none";
-    menuCTA.style.display = "none";
-  } else if (this.menuState = true) {
-    menuItems.classList.add = "slide-in";
-    menuCTA.classList.add = "slide-in";
-  } 
+function openMenu(params) {
+  menuItems.style.display = "block";
+  menuCTA.style.display = "block";
+  menuBtn.style.display = "none"
+  closeBtn.style.display = "block"
+}
+
+function closeMenu(params) {
+  menuItems.style.display = "none";
+  menuCTA.style.display = "none";
+  menuBtn.style.display = "block"
+  closeBtn.style.display = "none"
 }
