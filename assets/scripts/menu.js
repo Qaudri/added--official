@@ -7,13 +7,13 @@ let menuState = false
 toggleMenu.addEventListener("click", toggleState);
 
 function toggleState() {
-  this.menuState =! this.menuState;
+  this.menuState != this.menuState;
 
-  if (this.menuState = true) {
-    menuItems.style.display = "block";
-    menuCTA.style.display = "block";
-  } else {
+  if (this.menuState = false) {
     menuItems.style.display = "none";
     menuCTA.style.display = "none";
-  }
+  } else if (this.menuState = true) {
+    menuItems.style.display = "block";
+    menuCTA.style.display = "block";
+  } 
 }
