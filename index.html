@@ -16,49 +16,50 @@
         <div class="container mx-auto py-3 px-8 md:px-0">
             <div class="block lg:flex items-center justify-between">
       
-              <div class="flex justify-between">
-                  <div class="duration-500 transition">
-                      <a href="./index.html">
-                          <img src="./Assets/images/logo.svg" alt="" class="block w-36 xl:w-40" />
-                      </a>
-                  </div>
+                <div class="flex justify-between">
+                    <div class="duration-500 transition">
+                        <a href="./index.html">
+                            <img src="./Assets/images/logo.svg" alt="" class="block w-36 xl:w-40" />
+                        </a>
+                    </div>
+        
+                    <div class="block lg:hidden menu-wrap mr-8">
+                        <input type="checkbox" id="toggle"  class="toggle">
+                        <label for="toggle" class="hamburger" id="menu_button" >
+                            <div>
+        
+                            </div>
+                        </label>
+                    </div>
+                </div>
       
-                  <div class="block lg:hidden menu-wrap mr-8">
-                      <input type="checkbox" id="toggle"  class="toggle">
-                      <label for="toggle" class="hamburger" id="menu_button" >
-                          <div>
-      
-                          </div>
-                      </label>
-                  </div>
-              </div>
-      
-              <div class="items-center justify-between hidden lg:flex slide-in lg:pt-0 pt-8 h-screen lg:h-auto" id="menu_items">
-                  <a href="#who-we-are" 
-                      class="text-black text-base xl:text-xl font-medium hover:border-primary-100 hover:text-primary-100 border-b-2 border-transparent ease-in-out block my-4 mx-6 md:lg-0 duration-500">
-                      Who We Are
-                  </a>
-      
-                  <a href="#our-works"
-                      class="text-black text-base xl:text-xl font-medium  hover:border-primary-100 hover:text-primary-100 border-b-2 border-transparent ease-in-out block my-4 mx-6 lg:my-0 duration-500">
-                      Our Works
-                  </a>
-      
-                  <a href="#"
-                   class="text-black text-base xl:text-xl font-medium lg:mx-4 hover:border-primary-100 hover:text-primary-100 border-b-2 border-transparent ease-in-out lg:my-0 block my-4 mx-6 duration-500"> 
-                   Our Services
-                  </a>
-                  
-                  <a href="./academy.html"
-                    class="text-black text-base xl:text-xl font-medium lg:mx-4 hover:border-primary-100 hover:text-primary-100 border-b-2 border-transparent ease-in-out lg:my-0 block mb-10 my-4 mx-6 duration-500">
-                    Academy
-                  </a>
-      
-                  <a href="#" class="text-primary-100 xl:text-xl xl:border-3 text-base px-4 py-2 my-14 lg:my-0 mx-6 font-medium border-2 border-primary-100 hover:bg-primary-100 hover:text-white duration-500 ease-in-out">
-                      Let's Talk
-                  </a>
-      
-              </div>
+                <div class="items-center  hidden lg:flex lg:pt-0 pt-8 h-screen lg:h-auto" id="menu_items">
+                        <a href="#who-we-are" 
+                            class="text-black text-base xl:text-xl font-medium hover:border-primary-100 hover:text-primary-100 border-b-2 border-transparent ease-in-out block my-4 mx-6 md:lg-0 duration-500">
+                            Who We Are
+                        </a>
+            
+                        <a href="#our-works"
+                            class="text-black text-base xl:text-xl font-medium  hover:border-primary-100 hover:text-primary-100 border-b-2 border-transparent ease-in-out block my-4 mx-6 lg:my-0 duration-500">
+                            Our Works
+                        </a>
+            
+                        <a href="#our-services"
+                        class="text-black text-base xl:text-xl font-medium lg:mx-4 hover:border-primary-100 hover:text-primary-100 border-b-2 border-transparent ease-in-out lg:my-0 block my-4 mx-6 duration-500"> 
+                        Our Services
+                        </a>
+                        
+                        <a href="./academy.html"
+                            class="text-black text-base xl:text-xl font-medium lg:mx-4 hover:border-primary-100 hover:text-primary-100 border-b-2 border-transparent ease-in-out lg:my-0 block mb-10 my-4 mx-6 duration-500">
+                            Academy
+                        </a>
+            
+                        <a href="#" class="text-primary-100 xl:text-xl xl:border-3 text-base px-4 py-2 my-14 lg:my-0 mx-6 font-medium border-2 border-primary-100 hover:bg-primary-100 hover:text-white duration-500 ease-in-out">
+                            Let's Talk
+                        </a>
+        
+                </div>
+
             </div>
         </div>
   </header>
@@ -323,14 +324,14 @@
        </div>
    </section>
  
-   <section id="our-services" class="flex items-center justify-center px-8 md:px-0 py-20 xl:py-28">
+   <section id="our-services" class="flex items-center container mx-auto justify-center px-8 md:px-0 py-20 xl:py-28">
     <div>
         <div>
             <h1 class="md:text-4xl text-3xl font-bold uppercase text-center text-primary-100 flex justify-center mx-auto"">
                 Our Services                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         
             </h1>
 
-            <div class="grid grid-cols-2 lg:grid-cols-4 gap-4 mt-10 md:px-0 w-full">
+            <div class="grid grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 mt-10 md:px-0 w-full">
                 <div class="bg-gray-100 md:h-20 flex items-center p-4 md:p-6 w-full">
                     <img src="./assets/images/checked_icon.svg" class="w-8" alt="">
                     <p class="mx-4 md:mx-6 text-left text-base md:text-lg xl:text-lg ">Graphics Design</p>
