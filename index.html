@@ -277,7 +277,7 @@
                     Check out some of our previous works below
                 </p>
 
-                <div class="flex gap-8 flex-nowrap overflow-x-hidden py-16">
+                <div class="flex gap-8 flex-nowrap overflow-x-hidden py-16 slider">
                     <div class="w-96  bg-white relative">
                         <img src="./assets/images/portfolio/1.jpg" alt="">
                     </div>
@@ -455,4 +455,58 @@
 </body>
   <script src="./assets/scripts/menu.js"></script>
   <script src="./assets/scripts/services.js"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" referrerpolicy="no-referrer"></script>
+
+
+<!-- script slider JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js" integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+<script type="text/javascript">
+
+$(".slider").slick({
+    centerMode: false,
+    infinite: true,
+    slidesToShow: 2,
+    slidesToScroll: 1,
+    dots: false,
+    autoplay: true,
+    autoplaySpeed: 2000,
+    arrows: false,
+    variableWidth: true,
+
+
+    responsive: [
+        {
+        breakpoint: 1024,
+            settings: {
+                slidesToShow: 2,
+                slidesToScroll: 1,
+                infinite: true,
+                dots: false,
+            }
+        },
+            {
+            breakpoint: 600,
+            settings: {
+                slidesToShow: 2,
+                slidesToScroll: 1,
+                infinite: true,
+            }
+        },
+            {
+            breakpoint: 480,
+            settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                infinite: true,
+            }
+        }
+        // You can unslick at a given breakpoint now by adding:
+        // settings: "unslick"
+        // instead of a settings object
+    ]
+});
+
+</script>
 </html>
