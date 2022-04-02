@@ -4,6 +4,7 @@ let menuItems = document.getElementById("menu_items")
 
 menuBtn.addEventListener("click", openMenu);
 closeBtn.addEventListener("click", closeMenu);
+menuItems.addEventListener("click", closeMenu);
 
 
 function openMenu(params) {
