@@ -8,67 +8,59 @@
     <link rel="stylesheet" href="./assets/css/tailwind.css">
     <link rel="stylesheet" href="./assets/css/styles.css">
     <link rel="stylesheet" href="./assets/css/menu.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css" integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.css" integrity="sha512-6lLUdeQ5uheMFbWm3CP271l14RsX1xtx+J5x2yeIDkkiBpeVTNhTqijME7GgRKKi6hCqovwCoBTlRBEC20M8Mg==" crossorigin="anonymous" referrerpolicy="no-referrer" />   
 
 </head>
 <body>
 
-  <header class="shadow-lg bg-white top-0 fixed w-full">
+  <header class="shadow-lg fixed bg-white top-0 w-full">
+        <div class="container mx-auto py-3 px-8 md:px-0">
+            <div class="block lg:flex items-center justify-between">
+      
+                <div class="flex justify-between">
+                    <div class="duration-500 transition">
+                        <a href="./index.html">
+                            <img src="./Assets/images/logo.svg" alt="" class="block w-36 xl:w-40" />
+                        </a>
+                    </div>
+        
+                    <div class="lg:hidden menu-wrap">
+                        <img src="./assets/images/menu.svg" class="block w-10" alt="" id="menu_button">
+                        <img src="./assets/images/close.svg" class="hidden w-10" alt="" id="close_button">
 
-      <div class="container mx-auto py-3 px-8 md:px-0">
-          <div class="block lg:flex items-center justify-between">
+                    </div>
+                </div>
+      
+                <div class="items-center hidden lg:flex lg:pt-0 pt-8 h-screen lg:h-auto" id="menu_items">
+                        <a href="./index.html" 
+                            class="text-black text-base xl:text-xl font-medium hover:border-primary-100 hover:text-primary-100 border-b-2 border-transparent ease-in-out block my-4 mx-6 md:lg-0 duration-500">
+                            Back to Home
+                        </a>
+            
+                        <a href="#our-works"
+                            class="text-black text-base xl:text-xl font-medium  hover:border-primary-100 hover:text-primary-100 border-b-2 border-transparent ease-in-out block my-4 mx-6 lg:my-0 duration-500">
+                            Our Courses
+                        </a>
+            
+                        <a href="#our-services"
+                        class="text-black text-base xl:text-xl font-medium lg:mx-4 hover:border-primary-100 hover:text-primary-100 border-b-2 border-transparent ease-in-out lg:my-0 block my-4 mx-6 duration-500"> 
+                        Our Mentors
+                        </a>
+                        
+                        <a href="./academy.html"
+                            class="text-black text-base xl:text-xl font-medium lg:mx-4 hover:border-primary-100 hover:text-primary-100 border-b-2 border-transparent ease-in-out lg:my-0 block mb-10 my-4 mx-6 duration-500">
+                            Our Students
+                        </a>
+            
+                        <a href="#" class="text-primary-100 xl:text-xl xl:border-3 text-base px-4 py-2 my-14 lg:my-0 mx-6 font-medium border-2 border-primary-100 hover:bg-primary-100 hover:text-white duration-500 ease-in-out">
+                            Register Now
+                        </a>
+        
+                </div>
 
-          <div class="flex justify-between">
-              <div class="">
-                  <a href="./index.html">
-                      <img src="./Assets/images/logo.svg" alt="" class="block w-36 xl:w-40" />
-                  </a>
-              </div>
-
-              <div class="block lg:hidden menu-wrap mr-8">
-                  <input type="checkbox" id="toggle"  class="toggle">
-                  <label for="toggle" class="hamburger" id="menu_button" >
-                      <div>
-
-                      </div>
-                  </label>
-              </div>
-          </div>
-
-          <div class="items-center justify-between hidden lg:flex slide-in lg:pt-0 pt-8 h-screen lg:h-auto" id="menu_items">
-              <a href="./index.html" 
-                  class="text-black text-base xl:text-xl font-medium hover:border-primary-100 hover:text-primary-100 border-b-2 border-transparent hover:text-primary-100 hover:border-b-2 hover:border-primary-100 ease-in-out block my-4 mx-6 md:lg-0 duration-500">
-                  Back to Home
-              </a>
-
-              <a href="#"
-                  class="text-black text-base xl:text-xl font-medium hover:border-primary-100 hover:text-primary-100 border-b-2 border-transparent ease-in-out block my-4 mx-6 lg:my-0 duration-500">
-                  Our Courses
-              </a>
-
-              <a href="#"
-                  class="text-black text-base xl:text-xl font-medium lg:mx-4 hover:border-primary-100 hover:text-primary-100 border-b-2 border-transparent ease-in-out lg:my-0 block my-4 mx-6 duration-500"> 
-                  Our Mentors
-              </a>
-              
-              <a href="./academy.html"
-                  class="text-black text-base xl:text-xl font-medium lg:mx-4 hover:border-primary-100 hover:text-primary-100 border-b-2 border-transparent ease-in-out lg:my-0 block mb-10 my-4 mx-6 duration-500">
-                  Our Students
-              </a>
-
-              <a href="#" class="text-primary-100 xl:text-xl xl:border-3 text-base px-4 py-2 my-14 lg:my-0 mx-6 font-medium border-2 border-primary-100 hover:bg-primary-100 hover:text-white duration-500 ease-in-out">
-                  Register Now
-              </a>
-
-
-
-          </div>
-
-          </div>
-      </div>
-
+            </div>
+        </div>
   </header>
+
 
   <section class=" flex items-center">
 
@@ -257,17 +249,4 @@
 
 </body>
     <script src="./assets/scripts/menu.js"></script>
-    <script src="./assets/scripts/services.js"></script>
-
-    <!-- slick slider CSS -->
-
-    <!-- jquery script -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" referrerpolicy="no-referrer"></script>
-
-
-    <!-- script slider JS -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js" integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-
-    <script type="text/javascript"></script>
-
 </html>
