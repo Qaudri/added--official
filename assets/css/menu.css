@@ -50,21 +50,26 @@
 }
 
 
-.menu-wrap .toggle:checked + .hamburger > div{
+.menu-container .logo-container .menu-wrap .toggle:checked + .hamburger > div{
   background-color: white;
 
 }
 
-.menu-wrap .toggle:checked + .hamburger > div:before,
-.menu-wrap .toggle:checked + .hamburger > div:after{
+.menu-container .logo-container .menu-wrap .toggle:checked + .hamburger > div:before,
+.menu-container .logo-container .menu-wrap .toggle:checked + .hamburger > div:after{
   transform: rotate(40deg);
   background-color: #f26522;
 }  
 
-.menu-wrap .toggle:checked + .hamburger > div:after{
+.menu-container .logo-container .menu-wrap .toggle:checked + .hamburger > div:after{
   transform: rotate(-40deg);
   background-color: #f26522;
-}  
+}
+
+.menu-container .logo-container .menu-wrap .toggle:checked ~ .menu-items{
+  visibility: visible;
+  transform: translateX(-5em);
+}
 
 @media screen and (max-width: 1024px) {
   .slide-in{
