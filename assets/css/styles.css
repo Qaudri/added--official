@@ -48,6 +48,5 @@ br{
 }
 
 div{
-  text-align: justify;
-  text-justify: inter-word;
+  user-select: none;
 }
