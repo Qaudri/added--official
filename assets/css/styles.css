@@ -9,38 +9,6 @@ body{
   background-repeat: no-repeat;
 }
 
-.added-home-slider {
-  background: #444;
-  min-height: 300px;
-  max-width: 100%;
-  margin: 0 auto;
-  position: relative;
-  overflow: hidden;
-  transform: translateZ(0);
-}
-
-.added-home-slider .mover-1 {
-  -webkit-animation: moveImage 45s linear infinite;
-  animation: moveImage 45s linear infinite;
-}
-
-.added-home-slider>div {
-  height: 300px;
-  width: 100%;
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 100%;
-  transform: translateZ(0);
-}
-
-
-@keyframes moveImage{
-  100% {
-    transform: translateX(-50%);
-  }
-}
-
 br{
   content: "A" !important;
   display: block !important;
