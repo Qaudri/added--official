@@ -1,13 +1,13 @@
-if ((window.innerWidth < 1024)) {
-
   let menuBtn = document.getElementById("menu_button")
   let closeBtn = document.getElementById("close_button")
   let menuItems = document.getElementById("menu_items")
 
   menuBtn.addEventListener("click", openMenu);
   closeBtn.addEventListener("click", closeMenu);
-  menuItems.addEventListener("click", closeMenu);
 
+  if ((window.innerWidth < 1024)) {
+    menuItems.addEventListener("click", closeMenu);
+  }
 
   function openMenu(params) {
     menuItems.style.display = "block";
@@ -20,4 +20,4 @@ if ((window.innerWidth < 1024)) {
     menuBtn.style.display = "block";
     closeBtn.style.display = "none";
   }
-}
+
