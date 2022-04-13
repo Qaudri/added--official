@@ -22,3 +22,20 @@ div{
 h1{
   color: black !important;
 }
+
+@media screen and (min-width: 1024px){
+  .hero-text{
+    position: sticky;
+    width: 50vw;
+  }
+
+}
+/* 
+@media screen and (min-width: 1280px){
+  .hero-text{
+    position: unset;
+    max-width: 50vw;
+  }
+
+} */
+
