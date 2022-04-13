@@ -39,7 +39,19 @@ h1{
 
 } */
 
-.slide-in{
-  animation: slideIn 1s forwards;
+.menu-slide-down{
+  animation: slideDown 1s forwards;
+}
+
+@keyframes slideDown {
+  from{
+    opacity: 0;
+    transform: translateY(-5rem);
+  }
+
+  to{
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
