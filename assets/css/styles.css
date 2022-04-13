@@ -43,6 +43,10 @@ h1{
   animation: slideDown 1s forwards;
 }
 
+.menu-slide-up{
+  animation: slideUp 1s forwards;
+}
+
 @keyframes slideDown {
   from{
     opacity: 0;
@@ -50,6 +54,18 @@ h1{
   }
 
   to{
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideUp {
+  to{
+    opacity: 0;
+    transform: translateY(-5rem);
+  }
+
+  from{
     opacity: 1;
     transform: translateY(0);
   }

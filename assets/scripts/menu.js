@@ -10,14 +10,19 @@
   }
 
   function openMenu(params) {
-    menuItems.classList.add("menu-slide-down")
+    menuItems.classList.add("menu-slide-down");
     menuItems.style.display = "block";
     menuBtn.style.display = "none";
     closeBtn.style.display = "block";
   }
 
   function closeMenu(params) {
-    menuItems.style.display = "none";
+    menuItems.classList.remove("menu-slide-down")
+    menuItems.classList.add("menu-slide-up")
+    setTimeout(() => {
+      menuItems.style.display = "none";
+    }, 1000);
+    
     menuBtn.style.display = "block";
     closeBtn.style.display = "none";
   }
