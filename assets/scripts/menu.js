@@ -14,7 +14,6 @@
     menuItems.style.display = "block";
     menuBtn.style.display = "none";
     closeBtn.style.display = "block";
-    console.log("Menu Open");
   }
 
   function closeMenu(params) {
@@ -22,11 +21,10 @@
     menuItems.classList.add("menu-slide-up")
     setTimeout(() => {
       menuItems.style.display = "none";
+      menuItems.classList.remove("menu-slide-up")
     }, 1000);
 
     menuBtn.style.display = "block";
     closeBtn.style.display = "none";
-    console.log("Menu closed");
-
   }
 
