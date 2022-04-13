@@ -14,6 +14,7 @@
     menuItems.style.display = "block";
     menuBtn.style.display = "none";
     closeBtn.style.display = "block";
+    console.log("Menu Open");
   }
 
   function closeMenu(params) {
@@ -22,8 +23,10 @@
     setTimeout(() => {
       menuItems.style.display = "none";
     }, 1000);
-    
+
     menuBtn.style.display = "block";
     closeBtn.style.display = "none";
+    console.log("Menu closed");
+
   }
 
