@@ -22,7 +22,7 @@
     setTimeout(() => {
       menuItems.style.display = "none";
       menuItems.classList.remove("menu-slide-up")
-    }, 1000);
+    }, 750);
 
     menuBtn.style.display = "block";
     closeBtn.style.display = "none";

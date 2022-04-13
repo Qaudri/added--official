@@ -40,11 +40,11 @@ h1{
 } */
 
 .menu-slide-down{
-  animation: slideDown 1s forwards;
+  animation: slideDown .75s forwards;
 }
 
 .menu-slide-up{
-  animation: slideUp 1s forwards;
+  animation: slideUp .75s forwards;
 }
 
 @keyframes slideDown {
