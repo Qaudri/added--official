@@ -31,8 +31,3 @@ h1{
 
 }
 
-@media screen and (max-width: 600px){
-  extra{
-    display: block !important;
-  }
-}
