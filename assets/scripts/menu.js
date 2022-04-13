@@ -10,6 +10,7 @@
   }
 
   function openMenu(params) {
+    menuItems.classList.add("slide-in")
     menuItems.style.display = "block";
     menuBtn.style.display = "none";
     closeBtn.style.display = "block";

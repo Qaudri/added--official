@@ -39,3 +39,7 @@ h1{
 
 } */
 
+.slide-in{
+  animation: slideIn 1s forwards;
+}
+
