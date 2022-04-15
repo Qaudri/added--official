@@ -31,3 +31,17 @@ h1{
 
 }
 
+@media screen and (max-width: 375px){
+  .extra{
+    display: block !important;
+  }
+
+  p{
+    font-size: small !important;
+    width: 100%;
+
+  }
+
+}
+
+
