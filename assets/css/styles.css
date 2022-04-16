@@ -23,6 +23,10 @@ h1{
   color: black !important;
 }
 
+p{
+  color: #222222 !important;
+}
+
 @media screen and (min-width: 1024px){
   .hero-text{
     position: sticky;
