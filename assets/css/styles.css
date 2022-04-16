@@ -19,6 +19,14 @@ div{
   user-select: none;
 }
 
+h1{
+  color: #222222 !important;
+}
+
+p{
+  color: #222222 !important;
+}
+
 @media screen and (min-width: 1024px){
   .hero-text{
     position: sticky;
