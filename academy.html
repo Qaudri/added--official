@@ -9,8 +9,9 @@
     <link rel="stylesheet" href="./assets/css/tailwind.css">
     <link rel="stylesheet" href="./assets/css/styles.css">
     <link rel="stylesheet" href="./assets/css/menu.css">
-    <link rel="stylesheet" href="./assets/css/slick/slick-theme.css">
-    <link rel="stylesheet" href="./assets/css/slick/slick.css">
+    <!-- <link rel="stylesheet" href="./assets/css/slick/slick-theme.css">
+    <link rel="stylesheet" href="./assets/css/slick/slick.css"> -->
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
 
 </head>
 <body>
@@ -207,7 +208,7 @@
             <h1 class="md:text-4xl text-3xl font-bold uppercase mb-4 text-center text-primary-100 flex justify-center mx-auto">
                 What They're Saying
             </h1>
-            <div class="flex flex-nowrap overflow-x-hidden gap-5 md:gap-10 py-4 ">
+            <div class="flex flex-nowrap overflow-x-hidden gap-5 md:gap-10 py-4 slider">
 
                 <div class="bg-white shadow-md p-6" style="min-width: 24rem;">
                     <h1 class="text-9xl font-light opacity-20">"</h1>
@@ -361,10 +362,20 @@
 <script src="./assets/scripts/menu.js"></script>
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
 <script src="./assets/scripts/slick/slick.js"></script>
+<script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
 
 <script>
 $(document).ready(function(){
-    $('.slick').slick();
+    $('.slider').slick({
+        dots: true,
+        infinite: true,
+        speed: 300,
+        slidesToShow: 1,
+        centerMode: true,
+        variableWidth: true
+    });
+
 });
 </script>
 
