@@ -1,14 +1,15 @@
-const faqQuestions = document.querySelectorAll('faq-question]');
+const faqQuestions = document.querySelectorAll('[faq-question]');
 const hideAnswer = document.querySelectorAll('[answer-hide]');
 const revealAnswer = document.querySelectorAll('[answer-reveal]');
 const faqAnswers = document.querySelectorAll('[faq-answer]');
 
-const activeFAQ = new FAQ(faqQuestions,faqAnswers)
+// const activeFAQ = new FAQ(faqQuestions,faqAnswers)
 
-hideAnswer.forEach(button => {
-  button.addEventListener('click', ()=>{
+hideAnswer.forEach(image => {
+  image.addEventListener('click', ()=>{
     hideAnswer.setAttribute('id', 'hideAnswerBtn');
-    hideAnsweBtn.style.display = "block"
+    hideAnswerBtn.style.display = "block"
+    console.log("clicked")
 
   })
 });
