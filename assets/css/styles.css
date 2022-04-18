@@ -55,17 +55,3 @@ p{
   }
 
 }
-
-.slider{
-  display: flex !important;
-}
-
-.slick-slider{
-  display: flex !important;
-}
-
-.slider{
-  -webkit-transform: translate(0, -50%);
-  -ms-transform: translate(0, -50%);
-  transform: translate(0, -50%);
-}

@@ -208,9 +208,9 @@
             <h1 class="md:text-4xl text-3xl font-bold uppercase mb-4 text-center text-primary-100 flex justify-center mx-auto">
                 What They're Saying
             </h1>
-            <div class="flex-nowrap gap-5 md:gap-10 py-4 slider">
+            <div class="gap-5 md:gap-10 py-4 slider">
 
-                <div class="bg-white shadow-md p-6" style="max-width: 24rem;">
+                <div class="bg-white shadow-md p-6" style="min-width: 24rem;">
                     <h1 class="text-9xl font-light opacity-20">"</h1>
                     <p class="text-base md:text-lg xl:text-xl -mt-16 pl-10">
                         Being a student of the academy is literally one of the best thigs to ever happen to me. The support
@@ -220,7 +220,7 @@
                     <p class="text-sm mt-5 flex justify-end italic">-Ismail Adekunle (Plusmore)</p>
                 </div>
 
-                <div class="bg-white shadow-md p-6" style="max-width: 24rem;">
+                <div class="bg-white shadow-md p-6" style="min-width: 24rem;">
                     <h1 class="text-9xl font-light opacity-20">"</h1>
                     <p class="text-base md:text-lg xl:text-xl -mt-16 pl-10">
                         I can't believe the changes in my life since I took the Freelancing course with the academy. I have 
@@ -230,7 +230,7 @@
                     <p class="text-sm mt-5 flex justify-end italic">-Akanmu Aliu Omotayo</p>
                 </div>
 
-                <div class="bg-white shadow-md p-6" style="max-width: 24rem;">
+                <div class="bg-white shadow-md p-6" style="min-width: 24rem;">
                     <h1 class="text-9xl font-light opacity-20">"</h1>
                     <p class="text-base md:text-lg xl:text-xl -mt-16 pl-10">
                         Joining the academy has been a cornerstone in my life. I have transitioned far beyond what I could even think of
@@ -240,7 +240,7 @@
                     <p class="text-sm mt-5 flex justify-end italic">-Abdul Azeez Salaudeen</p>
                 </div>
 
-                <div class="bg-white shadow-md p-6" style="max-width: 24rem;">
+                <div class="bg-white shadow-md p-6" style="min-width: 24rem;">
                     <h1 class="text-9xl font-light opacity-20">"</h1>
                     <p class="text-base md:text-lg xl:text-xl -mt-16 pl-10">
                         I had a great time with the academy.The team was committed to great service and friendly. The atmosphere was awesome and 
@@ -250,7 +250,7 @@
                     <p class="text-sm mt-5 flex justify-end italic">-Nafiu L. Olaide</p>
                 </div>
 
-                <div class="bg-white shadow-md p-6" style="max-width: 24rem;">
+                <div class="bg-white shadow-md p-6" style="min-width: 24rem;">
                     <h1 class="text-9xl font-light opacity-20">"</h1>
                     <p class="text-base md:text-lg xl:text-xl -mt-16 pl-10">
                         Probably the best academy I've ever been to. I have been to a lot of academies in search of tech training and none rivals
@@ -260,7 +260,7 @@
                     <p class="text-sm mt-5 flex justify-end italic">-Mutawally Abdul Baaqi</p>
                 </div>
 
-                <div class="bg-white shadow-md p-6" style="max-width: 24rem;">
+                <div class="bg-white shadow-md p-6" style="min-width: 24rem;">
                     <h1 class="text-9xl font-light opacity-20">"</h1>
                     <p class="text-base md:text-lg xl:text-xl -mt-16 pl-10">
                         Thanks to the academy for being there for me during one of the most trying times if my life. I was in debt and saw no end.
@@ -271,7 +271,7 @@
                     <p class="text-sm mt-5 flex justify-end italic">-Atofarati Bright</p>
                 </div>
 
-                <div class="bg-white shadow-md p-6" style="max-width: 24rem;">
+                <div class="bg-white shadow-md p-6" style="min-width: 24rem;">
                     <h1 class="text-9xl font-light opacity-20">"</h1>
                     <p class="text-base md:text-lg xl:text-xl -mt-16 pl-10">
                         I love everything about the academy. The environment, the mentors, fellow students , you mention it!
@@ -281,7 +281,7 @@
                     <p class="text-sm mt-5 flex justify-end italic">-Muhammad A. Quadir</p>
                 </div>
 
-                <div class="bg-white shadow-md p-6" style="max-width: 24rem;">
+                <div class="bg-white shadow-md p-6" style="min-width: 24rem;">
                     <h1 class="text-9xl font-light opacity-20">"</h1>
                     <p class="text-base md:text-lg xl:text-xl -mt-16 pl-10">
                         For those looking for a digital skills academy, this is it. The skills I learnt, the support I received have all made my life better. I am digitally employable,
@@ -359,18 +359,21 @@
   </footer>
 
   <script src="./assets/scripts/menu.js"></script>
-  <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
-  <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
   <script type="text/javascript" src="slick/slick.min.js"></script>
     <script>
         $(document).ready(function(){
             $('.slider').slick({
                 dots: false,
                 infinite: true,
-                speed: 100,
+                arrows: false,
                 slidesToShow: 3,
+                slidesToScroll: 1,
                 centerMode: false,
                 variableWidth: false,
+                autoplay: true,
+                autoplaySpeed: 500,
+
             });
         
         });
