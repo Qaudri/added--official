@@ -56,4 +56,10 @@ p{
 
 }
 
+.slider{
+  display: flex !important;
+}
 
+.slick-slider{
+  display: flex !important;
+}
