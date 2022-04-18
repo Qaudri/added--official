@@ -55,3 +55,9 @@ p{
   }
 
 }
+
+.width{
+  width: 24rem !important;
+  padding-right: 2rem !important;
+  height: 26rem !important;
+}
