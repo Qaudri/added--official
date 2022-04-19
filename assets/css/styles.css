@@ -61,3 +61,7 @@ p{
   padding-right: 1.5rem !important;
   height: 26rem !important;
 }
+
+.bg-gray-50{
+  background-color: #f0ebeb !important;
+}
