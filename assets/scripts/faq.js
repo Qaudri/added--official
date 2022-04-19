@@ -1,11 +1,15 @@
 class FAQ{
   constructor(faqQuestions,faqAnswers){
-    this.theFaqQuestions = faqQuestions;
-    this.theFaqAnswers = faqAnswers;
-    this.hideAnswerBtn = hideAnswer;
-    this.revealAnswerBtn = revealAnswer;
+    this.theFaqQuestions = faqQuestions
+    this.theFaqAnswers = faqAnswers
+    this.hideAnswerBtn = hideAnswer
+    this.revealAnswerBtn = revealAnswer
   }
 }
+
+// NodeList.prototype.forEach = NodeList.prototype.forEach || Array.prototype.forEach;
+
+
 
 const faqQuestions = document.querySelectorAll('[faq-question]');
 const hideAnswer = document.querySelectorAll('[answer-hide]');
@@ -14,17 +18,20 @@ const faqAnswers = document.querySelectorAll('[faq-answer]');
 
 // const activeFAQ = new FAQ(faqQuestions,faqAnswers)
 
-hideAnswer.forEach(button => {
-  button.addEventListener('click', ()=>{
-    hideAnswer.setAttribute('id', 'hideAnswerBtn');
-    hideAnswerBtn.style.display = "block"
-    console.log("clicked")
-
+revealAnswer.forEach(item => {
+  item.addEventListener('click', ()=>{
+  item.setAttribute("id","revealAnswerButton");
+  this.revealAnswerButton.style.display = "none"
+  console.log("clicked");
   })
+
+  hideAnswer.forEach(button => {
+    button.addEventListener('click', ()=>{
+      button.setAttribute("id","hideAnswerButton");
+      hideAnswerButton.style.display = "block"
+      console.log("clicked")
+    })
+  });
 });
 
-revealAnswer.forEach(button => {
-  button.addEventListener('click', ()=>{
-    
-  })
-});
+
