@@ -17,21 +17,22 @@ const revealAnswer = document.querySelectorAll('[answer-reveal]');
 const faqAnswers = document.querySelectorAll('[faq-answer]');
 
 // const activeFAQ = new FAQ(faqQuestions,faqAnswers)
+var answerRevealed = false;
 
 revealAnswer.forEach(item => {
   item.addEventListener('click', ()=>{
   item.setAttribute("id","revealAnswerButton");
-  this.revealAnswerButton.style.display = "none"
-  console.log("clicked");
+  answerRevealed = true,
+  console.log(answerRevealed);
   })
+});
 
-  hideAnswer.forEach(button => {
-    button.addEventListener('click', ()=>{
-      button.setAttribute("id","hideAnswerButton");
-      hideAnswerButton.style.display = "block"
-      console.log("clicked")
-    })
-  });
+hideAnswer.forEach(button => {
+  button.addEventListener('click', ()=>{
+    button.setAttribute("id","hideAnswerButton");
+    answerRevealed = false,
+    console.log("clicked")
+  })
 });
 
 
