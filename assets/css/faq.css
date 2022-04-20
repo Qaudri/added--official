@@ -1,30 +1,12 @@
-.faq-heading{
-  border-bottom: #777;
-  padding: 20px 60px;
-}
-.faq{
-display: flex;
-justify-content: center;
-flex-direction: column;
 
-}
-.hr-line{
-width: 60%;
-margin: auto;
-
-}
 /* Style the buttons that are used to open and close the faq-page body */
 #question {
   transition: 0.4s;
   max-width: 80%;
 
 }
-.faq-body{
-  margin: auto;
-  /* text-align: center; */
- width: 50%; 
- padding: auto;
- 
+#answer{ 
+  max-width: 80%;
 }
 
 
@@ -35,23 +17,20 @@ margin: auto;
 }
 
 /* Style the faq-page panel. Note: hidden by default */
-.faq-body {
+#answer {
   padding: 0 18px;
   background-color: white;
   display: none;
   overflow: hidden;
 }
 
-.faq-page:after {
-  content: '\02795';
+#question:after {
+  content: 'url(./assets/image/reveal.svg)';
   /* Unicode character for "plus" sign (+) */
-  font-size: 13px;
-  color: #777;
-  float: right;
-  margin-left: 5px;
+
 }
 
 .active:after {
-  content: "\2796";
+  content: "";
   /* Unicode character for "minus" sign (-) */
 }
