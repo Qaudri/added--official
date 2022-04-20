@@ -14,16 +14,9 @@ margin: auto;
 
 }
 /* Style the buttons that are used to open and close the faq-page body */
-.faq-page {
-  /* background-color: #eee; */
-  color: #444;
-  cursor: pointer;
-  padding: 30px 20px;
-  width: 60%;
-  border: none;
-  outline: none;
+#question {
   transition: 0.4s;
-  margin: auto;
+  max-width: 80%;
 
 }
 .faq-body{
