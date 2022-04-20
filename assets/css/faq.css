@@ -25,12 +25,10 @@
 }
 
 #question:after {
-  content: 'url(./assets/image/reveal.svg)';
-  /* Unicode character for "plus" sign (+) */
-
+  content: 'Reveal';
 }
 
 .active:after {
-  content: "";
+  content: 'Hide';
   /* Unicode character for "minus" sign (-) */
 }
