@@ -1,6 +1,3 @@
-const activeFAQ = new FAQ(faqQuestions,faqAnswers)
-
-
 var faq = document.getElementsByClassName("faq");
 var i;
 
