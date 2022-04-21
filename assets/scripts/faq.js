@@ -3,7 +3,9 @@ var answer = document.getElementById("answer");
 var revealBtn = document.getElementById("reveal");
 var hideBtn = document.getElementById("hide");
 var i;
-
+var r;
+var h;
+var a;
 
 for (i = 0; i < faq.length; i++) {
     faq = array[i];
