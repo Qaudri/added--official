@@ -11,6 +11,18 @@ for (i = 0; i < faq.length; i++) {
     faq = array[i];
 }
 
+for (let r = 0; r < revealBtn.length; r++) {
+    revealBtn = array[r];
+}
+
+for (let h = 0; h < revealBtn.length; h++) {
+    hideBtn = array[h];
+}
+
+for (let a = 0; a < revealBtn.length; a++) {
+    revealBtn = array[a];
+}
+
 revealBtn.addEventListener("click", function () {
     revealBtn.style.display = "none";
     hideBtn.style.display = "block";
