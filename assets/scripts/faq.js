@@ -2,17 +2,19 @@ var faq = document.getElementsByClassName("faq");
 var i;
 
 for (i = 0; i < faq.length; i++) {
-    faq[i].addEventListener("click", function () {
-        /* Toggle between adding and removing the "active" class,
-        to highlight the button that controls the panel */
-        this.classList.toggle("active");
+    const answer = document.getElementById("answer");
+    const revealBtn = document.getElementById("reveal");
+    const hideBtn = document.getElementById("hide");
 
-        /* Toggle between hiding and showing the active panel */
-        var answer = this.nextElementSibling;
-        if (answer.style.display === "block") {
-            answer.style.display = "none";
-        } else {
-            answer.style.display = "block";
-        }
+    revealBtn.addEventListener("click", function () {
+        revealBtn.style.display = "none";
+        hideBtn.style.display = "block";
+        answer.style.display = "block"
     });
+
+    hideBtn.addEventListener("click", function () {
+        revealBtn.style.display = "block";
+        hideBtn.style.display = "none";
+        answer.style.display = "none"
+    })
 }
