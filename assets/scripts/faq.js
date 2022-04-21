@@ -15,6 +15,7 @@ for (i = 0; i < faq.length; i++) {
     hideBtn.addEventListener("click", function () {
         revealBtn.style.display = "block";
         hideBtn.style.display = "none";
-        answer.style.display = "none"
+        answer.classList.remove("faq-slide-down")
+        answer.classList.add("faq-slide-up")
     })
 }
