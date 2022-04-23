@@ -4,7 +4,7 @@
   }
   
   .accordion-item {
-  background-color: #058182;
+  background-color: #ffffff;
   color: #ffffff;
   margin-bottom: 20px;
   border: 3px solid #058182;
@@ -17,15 +17,15 @@
   }
   
   .accordion-item .accordion-title.active-title {
-  background-color: #058182;
-  color: #ffffff;
+  background-color: #ffffff;
+  color: #058182;
   }
   
   .accordion-item .accordion-title h3 {
   font-weight: 700;
   margin: 0;
   justify-content: space-between;
-  font-weight: bold;
+  color: #058182;
   font-size: 18px;
   display: flex;
   }
