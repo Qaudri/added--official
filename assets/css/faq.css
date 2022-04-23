@@ -1,13 +1,8 @@
-  .accordions h3 {
-  text-align: center;
-  font-weight: bold;
-  }
-  
   .accordion-item {
   background-color: #ffffff;
   color: #ffffff;
   margin-bottom: 20px;
-  border: 3px solid #058182;
+  border: 2px solid #058182;
   }
   
   .accordion-item .accordion-title {
@@ -22,7 +17,7 @@
   }
   
   .accordion-item .accordion-title h3 {
-  font-weight: 600;
+  font-weight: 500;
   margin: 0;
   justify-content: space-between;
   color: #058182;
