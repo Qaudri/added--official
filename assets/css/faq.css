@@ -22,7 +22,7 @@
   }
   
   .accordion-item .accordion-title h3 {
-  font-weight: 700;
+  font-weight: 600;
   margin: 0;
   justify-content: space-between;
   color: #058182;
@@ -31,13 +31,16 @@
   }
   
   .accordion-item .accordion-title i.fa-chevron-down {
+  background: url(../images/reveal.svg);
+  background-repeat: no-repeat;
+  margin: 7px 0;
+  width: 1rem;
   transform: rotate(0);
   transition: 0.4s;
   }
   
   .accordion-item .accordion-title i.fa-chevron-down.chevron-top {
   transform: rotate(-180deg);
-  color: #fa5019;
   }
   
   .accordion-item .accordion-content {
