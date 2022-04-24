@@ -1,0 +1,17 @@
+form{
+  width: 100%;
+  display: block;
+}
+
+label{
+  font-weight: 500;
+  color: #058182;
+  margin-bottom: 10px;
+  display: block;
+}
+
+input{
+  padding: 10px 15px;
+  margin: 10px 0;
+  display: block;
+}
