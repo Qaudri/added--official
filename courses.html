@@ -12,49 +12,51 @@
 
 </head>
 <body>
-  <header class="shadow-lg fixed bg-white top-0 w-full">
-    <div class="container mx-auto py-3 px-10">
-      <div class="block lg:flex items-center justify-between">
+  <header class="relative w-full">
+    <div class="shadow-lg fixed bg-white top-0 w-full">
+      <div class="container mx-auto py-3 px-10">
+        <div class="block lg:flex items-center justify-between">
 
-        <div class="flex justify-between">
-          <div class="duration-500 transition">
-            <a href="./courses.html">
-              <img src="./assets/images/main-logo.svg" alt="" class="block w-36 xl:w-40" />
+          <div class="flex justify-between">
+            <div class="duration-500 transition">
+              <a href="./courses.html">
+                <img src="./assets/images/main-logo.svg" alt="" class="block w-36 xl:w-40" />
+              </a>
+            </div>
+
+            <div class="lg:hidden menu-wrap">
+              <img src="./assets/images/menu.svg" class="block w-10" alt="" id="menu_button">
+              <img src="./assets/images/close.svg" class="hidden w-10" alt="" id="close_button">
+            </div>
+          </div>
+
+          <div class="items-center hidden lg:flex lg:pt-0 pt-8 h-screen lg:h-auto" id="menu_items">
+            <a href="./index.html" 
+              class="text-black text-base lg:mx-4 lg:my-0 xl:text-xl font-medium hover:border-primary-100 hover:text-primary-100 border-b-2 border-transparent ease-in-out block my-4 mx-10 md:lg-0 duration-500">
+              Back to Home
+            </a>
+
+            <a href="./academy.html#our-academy"
+            class="text-black text-base xl:text-xl font-medium  hover:border-primary-100 hover:text-primary-100 border-b-2 border-transparent ease-in-out block my-4 mx-10 lg:my-0 duration-500">
+            Our Academy
+            </a>
+
+            <a href="./academy.html#our-courses"
+            class="text-black text-base xl:text-xl font-medium lg:mx-4 hover:border-primary-100 hover:text-primary-100 border-b-2 border-transparent ease-in-out lg:my-0 block my-4 mx-10 duration-500"> 
+            Our Courses
+            </a>
+
+            <a href="./academy.html#reviews/faqs"
+            class="text-black text-base xl:text-xl mb-10 font-medium lg:mx-4 hover:border-primary-100 hover:text-primary-100 border-b-2 border-transparent ease-in-out lg:my-0 block my-4 mx-10 duration-500"> 
+            Our Reviews
+            </a>
+
+            <a href="https://bit.ly/3uOIVPo" target="blank" class="text-primary-100 xl:text-xl lg:ml-4 xl:border-3 text-base px-4 py-2 my-14 lg:my-0 mx-6 lg:mr-0 font-medium border-2 border-primary-100 hover:bg-primary-100 hover:text-white duration-500 ease-in-out">
+              Contact Us
             </a>
           </div>
 
-          <div class="lg:hidden menu-wrap">
-            <img src="./assets/images/menu.svg" class="block w-10" alt="" id="menu_button">
-            <img src="./assets/images/close.svg" class="hidden w-10" alt="" id="close_button">
-          </div>
         </div>
-
-        <div class="items-center hidden lg:flex lg:pt-0 pt-8 h-screen lg:h-auto" id="menu_items">
-          <a href="./index.html" 
-            class="text-black text-base lg:mx-4 lg:my-0 xl:text-xl font-medium hover:border-primary-100 hover:text-primary-100 border-b-2 border-transparent ease-in-out block my-4 mx-10 md:lg-0 duration-500">
-            Back to Home
-          </a>
-
-          <a href="./academy.html#our-academy"
-          class="text-black text-base xl:text-xl font-medium  hover:border-primary-100 hover:text-primary-100 border-b-2 border-transparent ease-in-out block my-4 mx-10 lg:my-0 duration-500">
-          Our Academy
-          </a>
-
-          <a href="./academy.html#our-courses"
-          class="text-black text-base xl:text-xl font-medium lg:mx-4 hover:border-primary-100 hover:text-primary-100 border-b-2 border-transparent ease-in-out lg:my-0 block my-4 mx-10 duration-500"> 
-          Our Courses
-          </a>
-
-          <a href="./academy.html#reviews/faqs"
-          class="text-black text-base xl:text-xl mb-10 font-medium lg:mx-4 hover:border-primary-100 hover:text-primary-100 border-b-2 border-transparent ease-in-out lg:my-0 block my-4 mx-10 duration-500"> 
-          Our Reviews
-          </a>
-
-          <a href="https://bit.ly/3uOIVPo" target="blank" class="text-primary-100 xl:text-xl lg:ml-4 xl:border-3 text-base px-4 py-2 my-14 lg:my-0 mx-6 lg:mr-0 font-medium border-2 border-primary-100 hover:bg-primary-100 hover:text-white duration-500 ease-in-out">
-            Contact Us
-          </a>
-        </div>
-
       </div>
     </div>
   </header>
