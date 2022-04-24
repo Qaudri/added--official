@@ -14,4 +14,10 @@ input{
   padding: 10px 15px;
   margin: 10px 0;
   display: block;
+  width: 100%;
+  border: #058182 !important;
+}
+
+input ::placeholder{
+  color: #058182;
 }
