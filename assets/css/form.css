@@ -1,12 +1,14 @@
 form{
   width: 100%;
   display: block;
+  box-sizing: border-box;
+
 }
 
 label{
-  font-weight: 500;
+  font-weight: medium;
   color: #058182;
-  margin-bottom: 10px;
+  margin-top: 30px;
   display: block;
 }
 
@@ -15,9 +17,31 @@ input{
   margin: 10px 0;
   display: block;
   width: 100%;
-  border: #058182 !important;
+  border: 2px solid #222222;
 }
 
-input ::placeholder{
+
+input:focus{
+  border: 2px solid #058182;
+  border-radius: 0;
+  outline: none;
   color: #058182;
+}
+
+input[type=button]{
+  margin-top: 4rem;
+  width: 12rem;
+  background-color: transparent;
+  border: 2px solid #058182;
+  text-transform: capitalize;
+  color: #058182;
+  font-weight: 600;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+input[type=button]:hover{
+  background: #058182;
+  color: white;
+  transition: .5s ease-in-out;
 }
