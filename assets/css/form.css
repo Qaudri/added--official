@@ -27,9 +27,9 @@ input:focus{
   color: #058182;
 }
 
-input[type=button]{
-  margin-top: 3.5rem;
-  width: 12rem;
+.submit{
+  margin-top: 3rem;
+  width: 10rem;
   background-color: transparent;
   border: 2px solid #058182;
   text-transform: capitalize;
@@ -39,7 +39,7 @@ input[type=button]{
   cursor: pointer;
 }
 
-input[type=button]:hover{
+.submit:hover{
   background: #058182;
   color: white;
   transition: .5s ease-in-out;
@@ -48,8 +48,8 @@ input[type=button]:hover{
 .wrapper{
   align-items: center;
   /* justify-content: space-evenly; */
-  border-radius: 5px;
-  padding: 20px 0;
+  /* border-radius: 5px; */
+  /* padding: 20px 0; */
 }
 .wrapper .option{
   height: 100%;
@@ -102,7 +102,7 @@ input[type="radio"]{
   transform: scale(1);
 }
 .wrapper .option span{
-  font-size: 20px;
+  font-size: 16px;
   color: #808080;
 }
 #option-1:checked:checked ~ .option-1 span,
