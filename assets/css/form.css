@@ -2,7 +2,6 @@ form{
   width: 100%;
   display: block;
   box-sizing: border-box;
-
 }
 
 label{
@@ -29,14 +28,14 @@ input:focus{
 }
 
 input[type=button]{
-  margin-top: 4rem;
+  margin-top: 3.5rem;
   width: 12rem;
   background-color: transparent;
   border: 2px solid #058182;
   text-transform: capitalize;
   color: #058182;
   font-weight: 600;
-  font-size: 20px;
+  font-size: 16px;
   cursor: pointer;
 }
 
